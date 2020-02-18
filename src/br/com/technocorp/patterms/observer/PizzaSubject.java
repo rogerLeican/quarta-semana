@@ -12,17 +12,17 @@ public class PizzaSubject {
         return estado;
     }
 
-    public void setEstado(int estado){
+    public void setEstado(int estado) {
         this.estado = estado;
         notificarTodosObservadores();
     }
 
-    public void anexar(X9Observer x9){
-       this.X9.add(x9);
+    public void anexar(X9Observer x9) {
+        this.X9.add(x9);
     }
 
-    public void notificarTodosObservadores(){
-        for (X9Observer observer: X9) {
+    public void notificarTodosObservadores() {
+        for ( X9Observer observer : X9 ) {
             observer.atualizar();
         }
     }

@@ -1,6 +1,6 @@
 package br.com.technocorp.patterms.observer;
 
-public class OctalObserver  extends X9Observer{
+public class OctalObserver extends X9Observer {
 
     public OctalObserver(PizzaSubject pizzaSubject) {
         this.pizzaSubject = pizzaSubject;
